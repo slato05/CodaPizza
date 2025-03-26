@@ -66,11 +66,7 @@ private var pizza = Pizza(toppings = mapOf(Topping.Pepperoni to ToppingPlacement
 //private var pizza by mutableStateOf(Pizza())
 
 @Composable
-private fun ToppingsList(
-    pizza: Pizza,
-    onEditPizza: (Pizza) -> Unit,
-    modifier: Modifier = Modifier
-) {
+private fun ToppingsList(pizza: Pizza, onEditPizza: (Pizza) -> Unit, modifier: Modifier = Modifier) {
     //var pizza by remember {mutableStateOf(Pizza())}
     LazyColumn(
         modifier = modifier
@@ -96,10 +92,7 @@ private fun ToppingsList(
 }
 
 @Composable
-private fun OrderButton(
-    pizza: Pizza,
-    modifier: Modifier = Modifier
-) {
+private fun OrderButton(pizza: Pizza, modifier: Modifier = Modifier) {
     Button(
         modifier = modifier,
         onClick = { }
